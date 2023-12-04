@@ -1,0 +1,345 @@
+/* prevent problems with different browsers*/
+* {box-sizing: border-box;}
+
+
+body {
+    font-family: 'IBM Plex Serif', serif;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0;
+}
+
+/* Header stuff here */
+
+header {
+    padding: 1rem 2vw;
+    display: flex;
+    align-items: center;
+}
+header div {
+    padding: 1vw;
+}
+
+header {
+    background-color: #1D1D1D;
+    padding: 1rem 2vw;
+}
+header h1 {
+        margin: 0;
+        color: #E9E9E9;
+}
+header p {
+        margin: 0;
+        color: #E9E9E9;
+        letter-spacing: 0.5px;
+}
+
+/* nav stuff here */
+/* Wide Screen */
+@media only screen and (min-width: 661px) {    
+    nav {
+    background-color: #B6A376; 
+}
+nav ul {
+    list-style-type: none;
+    padding: 0 2vw;
+    margin: 0;
+    display: flex;
+    overflow: hidden;
+}
+nav a {
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #1D1D1D;
+    font-weight: 700;
+    display: block;
+    padding: 2vw 3vw;
+}
+nav li.active a {
+    color: #B6A376;
+}
+nav li.active {
+    background-color: #1D1D1D;
+    color: #B6A376;
+    background-image: linear-gradient(to bottom, #1D1D1D, #434343);
+}
+nav a:hover {
+    color: white;
+}    
+}
+/* Small Screen */
+@media only screen and (max-width: 660px) {
+    nav ul {
+        margin: 0;
+        padding: 0 2vw;
+        list-style-type: none;
+    }
+    nav a {
+        display: block;
+        padding: .8rem;
+        text-decoration: none;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+        border-bottom: solid 1px #aaa;
+        color: #1D1D1D;
+        background-color: #B6A376;
+        border-radius: 10px;
+        margin: 1vw;
+    }
+    
+    nav .active a {
+        background-color: #1D1D1D;
+        background-image: linear-gradient(to bottom, #1D1D1D, #434343);
+        color: #B6A376;
+    }
+}
+/* Stuff for main*/
+main{
+    padding: 1rem 2vw;
+}
+main h1 {
+    color: #9F110E;
+}
+main h2 {
+    color: #1D1D1D;
+    margin-bottom: .2rem;
+}
+main p {
+    color: #2f3133;
+    margin: 0 0 .3rem 0;
+}
+
+main ol{
+    color: #E9E9E9; 
+    padding: .7rem 4vw;
+    background-color: #1D1D1D;
+    border-radius: 10px;
+}
+
+main dl dt {
+    color: #9F110E;
+    font-weight: 700;
+}
+main dl dd {
+    color: #1D1D1D;
+    font-size: .9rem;
+}
+/* This took me so long to figure out but I did it all on my own and Im so proud of myself */
+main li.square {
+    list-style-type: square;
+}
+main ul {
+    list-style-type: circle;
+}
+main ul li {
+    line-height: 125%;
+    margin-bottom: .5rem;
+    font-size: .9rem;
+}
+main address {
+    font-weight: 700;
+    color: #1D1D1D;
+    background-color: #B6A376;
+    padding: .5rem;
+    border: 1px solid #B6A376;
+    border-radius: 5px;
+}
+
+main address a{
+    color: #1D1D1D;
+}
+
+Main a {
+    color: #9F110E;
+}
+Main a:hover {
+    color: rgb(239, 0, 24);
+}
+.zacama {
+    width: 100%;
+    margin: 0;
+}
+.zacama img {
+    width: 100%;
+    height: auto;
+}
+
+/* Video styling */
+.video {
+    border-radius: 10px;
+    border: 4px solid #B6A376;
+    box-shadow: 0 0 10px black;
+  }
+.eldraine {
+    border-radius: 10px;
+    border: 4px solid #B6A376;
+    box-shadow: 0 0 10px black;
+  }
+
+.eldraine {
+  position: relative;
+  padding-bottom: 56.25%; 
+  height: 0;
+  overflow: hidden;
+}
+
+.eldraine iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+figure.wrapped {
+    width: 35%;
+    margin: 0 0 0 2%;
+    float: right;
+    border-radius: 10px;
+    overflow: hidden; 
+}
+
+figure.wrapped img {
+    width: 100%;
+    height: auto;
+    display: block; 
+}
+
+figure.wrapped figcaption {
+    text-align: center;
+    font-size: 0.75rem;
+    padding: 10px; 
+    background-color: #B6A376;
+    font-weight: 700;
+    box-shadow: inset 0px 0px 10px #1D1D1D;
+}
+
+div.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+div.gallery figure {
+    margin: .5rem 2% 0 0;
+}
+div.gallery img {
+    display: block;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    overflow: hidden;
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+}
+
+div.gallery img:hover {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 0px 0px 15px #1D1D1D;
+}
+
+div.gallery figcaption {
+    text-align: center;
+    font-size: .8rem;
+    font-weight: 700;
+    color: #1D1D1D;
+    padding: .4rem; 
+    background-color: #B6A376;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: inset 0px 0px 10px #1D1D1D;
+}
+
+.myForm fieldset {
+    border: 1px solid #B6A376;
+    border-radius: 3px;
+    margin-bottom: 1rem;
+}
+
+.myForm legend {
+    color: #9F110E;
+    font-size: .8rem;
+}
+
+.myForm label {
+    margin: .5rem;
+}
+
+.myForm label, .myForm select, .myForm [type=text], .myForm [type=tel], .myForm textarea, .myForm [type=email]{
+    display: block;
+}
+
+.myForm [type=text], .myForm [type=tel], .myForm select, .myForm textarea, .myForm [type=email] {
+    border: solid 1px #888;
+    padding: .3rem;
+    width: 250px;
+    Border-radius: .3rem;
+    font-family: 'IBM Plex Serif', serif;
+    font-weight: 200;
+}
+
+.myForm textarea {
+    height: 6rem;
+}
+
+.myForm :required {
+    background-color: rgba(156, 51, 53, 0.1);
+}
+
+.myForm [type=text]:valid, .myForm [type=tel]:valid, .myForm [type=email]:valid {
+    background-color: rgba(30, 180, 53, 0.1);
+}
+
+.myForm [type=submit] {
+    background-color: #B6A376;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    color: #1D1D1D;
+    margin: 1rem 0 0 1vw;
+}
+
+table.mtg {
+    width:100%;
+    border-collapse: collapse;
+}
+
+table.mtg th{
+    background-color: #B6A376;
+    color: #1D1D1D;
+    padding: .5rem 2vw;
+    text-align: left;
+}
+
+table.mtg td {
+    color: #1D1D1D;
+    padding: .4rem 2vw;
+}
+
+table.mtg tr:nth-child(odd) {
+    background-color: #f7f7f7;
+}
+
+table.mtg tr:hover {
+    background-color:  rgba(131,30,31,0.2);
+}
+/* footer stuff here */
+footer {
+    background-color: #1D1D1D;
+    text-align: center;
+    color: #E9E9E9;
+    padding: 1rem 0;
+    font-size: .8rem;
+    clear: both;
+}
+footer a {
+    color: #B6A376;
+}
+
+/* max width of site */
+nav, main {
+    max-width: 64rem;
+    margin: 0 auto;
+}
